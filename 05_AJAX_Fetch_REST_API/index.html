@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS files -->
+    <link rel="stylesheet" href="../bootstrap/css/font-awesome-5.8.1.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="../bootstrap/css/style.css">
+    <title>AJAX FETCH with REST API</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">AJAX FETCH with REST API</a>
+    </nav>
+
+    <!-- Button Section -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col text-center">
+                <button class="btn btn-success" id="get-btn">GET</button>
+                <button class="btn btn-primary" id="post-btn">POST</button>
+                <button class="btn btn-warning" id="put-btn">PUT</button>
+                <button class="btn btn-danger" id="delete-btn">DELETE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Table Section -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col">
+                <table class="table table-hover text-center table-secondary table-striped"> 
+                    <thead class="bg-secondary text-white">
+                        <tr>
+                            <th>EMP ID</th>
+                            <th>FIRST NAME</th>
+                            <th>LAST NAME</th>
+                            <th>EMAIL</th>
+                            <th>GENDER</th>
+                            <th>IP ADDRESS</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    
+
+<!-- Bootstrap JS Files -->
+<script src="../bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="../bootstrap/js/popper.min.js"></script>
+<script src="../bootstrap/js/bootstrap.js"></script>
+<script src="../bootstrap/js/mdb.js"></script>
+<!-- Application Specific JS FIles -->
+<script type="module" src="app.js"></script>
+</body>
+</html>
